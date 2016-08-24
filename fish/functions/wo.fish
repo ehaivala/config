@@ -1,6 +1,6 @@
 function wo -d "Activate a virtualenv"
     if test (count $argv) -lt 1
-        echo "Usage: v <environment name>"
+        echo "Usage: wo <environment name>"
         return 1
     end
     set -l envname $argv[1]
