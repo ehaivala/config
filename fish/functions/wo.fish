@@ -5,7 +5,7 @@ function wo -d "Activate a virtualenv"
     end
     set -l envname $argv[1]
     set -l envdir ~/envs/$envname/venv
-    set -l projdir ~/envs/$envname/project
+    set -l projdir ~/envs/$envname
     if set -q VIRTUAL_ENV
         echo "Deactivating current virtualenv $VIRTUAL_ENV"
         deactivate
@@ -20,5 +20,7 @@ function wo -d "Activate a virtualenv"
         echo "Changing to project directory $projdir"
         cd $projdir
     end
+    if test -d $projdir/project
+        cd project
+    end
 end
-complete -x -c v -d "Project name" -a "(ls -1 /Users/eetu/envs)"
