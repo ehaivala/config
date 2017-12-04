@@ -10,6 +10,26 @@
       },
       "BTTTriggers" : [
         {
+          "BTTGestureNotes" : "Previous track",
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 26,
+          "BTTPredefinedActionName" : "Previous",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 123,
+          "BTTShortcutModifierKeys" : 9175040,
+          "BTTOrder" : 7
+        },
+        {
+          "BTTGestureNotes" : "Play\/Pause",
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 23,
+          "BTTPredefinedActionName" : "Play\/Pause",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 125,
+          "BTTShortcutModifierKeys" : 9175040,
+          "BTTOrder" : 8
+        },
+        {
           "BTTGestureNotes" : "Sane curly brackets",
           "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
@@ -63,6 +83,16 @@
           "BTTPredefinedActionName" : "No Action",
           "BTTEnabled" : 1,
           "BTTOrder" : 0
+        },
+        {
+          "BTTGestureNotes" : "Next track",
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 27,
+          "BTTPredefinedActionName" : "Next",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 124,
+          "BTTShortcutModifierKeys" : 9175040,
+          "BTTOrder" : 6
         },
         {
           "BTTGestureNotes" : "Sane backslash",
