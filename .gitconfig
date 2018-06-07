@@ -1,0 +1,25 @@
+[alias]
+    amend = commit --amend
+    br = branch
+    cm = checkout master
+    co = checkout
+    dc = diff --cached
+    namend = commit --amend --no-edit
+    fix = "!f() { git commit --fixup $1 && git rebase -i --autosquash $1~1; }; f"
+    rb = rebase
+    rba = rebase --abort
+    rbc = rebase --continue
+    rbi = rebase -i
+    rbia = rebase -i --autosquash
+    rbm = rebase master
+    st = status
+    tags = "!f() { git fetch --tags && git tag --list; }; f"
+    wip = commit -m WIP
+    cmt = commit
+    uncmt = reset HEAD^
+    l10 = log -n 10 --oneline
+    l20 = log -n 20 --oneline
+[core]
+    editor = code -n -w
+[user]
+    name = Eetu Häivälä
